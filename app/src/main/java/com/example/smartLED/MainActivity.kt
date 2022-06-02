@@ -1,15 +1,10 @@
-package com.example.ledcontroller
+package com.example.smartLED
 
 import android.content.Context
-import android.content.SharedPreferences
 import android.content.res.ColorStateList
-import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.widget.Button
-import android.widget.ImageButton
-import android.widget.ToggleButton
 import androidx.activity.ComponentActivity
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
@@ -18,14 +13,13 @@ import androidx.core.graphics.ColorUtils
 import androidx.core.graphics.blue
 import androidx.core.graphics.green
 import androidx.core.graphics.red
-import com.example.ledcontroller.ui.theme.LEDcontrollerTheme
+import com.example.smartLED.ui.theme.SmartLEDTheme
 import com.madrapps.pikolo.ColorPicker
 import com.madrapps.pikolo.listeners.SimpleColorSelectionListener
 import kotlinx.coroutines.*
 import java.net.DatagramPacket
 import java.net.DatagramSocket
 import java.net.InetAddress
-import java.net.Socket
 import java.nio.ByteBuffer
 
 class MainActivity : ComponentActivity() {
@@ -110,7 +104,7 @@ fun Greeting(name: String) {
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
-    LEDcontrollerTheme {
+    SmartLEDTheme {
         Greeting("Android")
     }
 }

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LEDcontroller</string>
+    <string name="app_name">smartLED</string>
     <string name="button">Button</string>
     <string name="textview">TextView</string>
 </resources>

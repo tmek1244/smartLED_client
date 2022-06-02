@@ -1,4 +1,4 @@
-package com.example.ledcontroller
+package com.example.smartLED
 
 import org.junit.Test
 
