@@ -20,20 +20,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         pikolo:stroke_width="2dp"
-        pikolo:arc_width="6dp"
-        pikolo:lightness_start_angle="70"
-
-        pikolo:saturation_arc_width="0dp"
-        pikolo:saturation_arc_length="0.0001"
-        pikolo:saturation_start_angle="0"
-        pikolo:saturation_stroke_width="0dp"
-        pikolo:saturation_indicator_stroke_width="0dp"
-        pikolo:saturation_indicator_radius="0dp"/>
+        pikolo:arc_width="15dp"
+        pikolo:saturation_radius_offset="50dp"
+        pikolo:lightness_radius_offset="50dp"
+        />
 
     <View
         android:id="@+id/colorBox"
-        android:layout_width="218dp"
-        android:layout_height="214dp"
+        android:layout_width="161dp"
+        android:layout_height="150dp"
         android:background="@drawable/circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
