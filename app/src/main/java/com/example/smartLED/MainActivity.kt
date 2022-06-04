@@ -13,6 +13,8 @@ import androidx.core.graphics.ColorUtils
 import androidx.core.graphics.blue
 import androidx.core.graphics.green
 import androidx.core.graphics.red
+import androidx.datastore.core.DataStore
+import androidx.datastore.preferences.preferencesDataStore
 import com.example.smartLED.ui.theme.SmartLEDTheme
 import com.madrapps.pikolo.ColorPicker
 import com.madrapps.pikolo.listeners.SimpleColorSelectionListener
@@ -21,12 +23,15 @@ import java.net.DatagramPacket
 import java.net.DatagramSocket
 import java.net.InetAddress
 import java.nio.ByteBuffer
+import java.util.prefs.Preferences
 
 class MainActivity : ComponentActivity() {
     var brightness: Int = 50
 //    private  color: Int = 150.0
     var isOn: Boolean = false
 //     pref: SharedPreferences = null
+
+    private val Context.dataStore: DataStore<Preferences> by preferencesDataStore("settings")
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,6 +42,7 @@ class MainActivity : ComponentActivity() {
         val color = pref.getInt("COLOR", 0)
         Log.d("RED READ", color.toString())
 
+        dataStore = applicationContext.createDataStore()
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout)
