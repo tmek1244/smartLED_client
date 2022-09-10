@@ -17,6 +17,7 @@ android {
         vectorDrawables {
             useSupportLibrary true
         }
+        vectorDrawables.useSupportLibrary = true
     }
 
     buildTypes {
@@ -64,6 +65,6 @@ dependencies {
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
 
-
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4"
     implementation "com.github.madrapps:pikolo:2.0.2"
 }

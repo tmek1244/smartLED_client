@@ -25,17 +25,30 @@
         pikolo:lightness_radius_offset="50dp"
         />
 
+    <ImageButton
+        android:id="@+id/powerButton"
+        android:layout_width="159dp"
+        android:layout_height="149dp"
+        android:background="@drawable/circle"
+        android:contentDescription="@string/powerButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mainColorPicker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mainColorPicker"
+        app:srcCompat="@android:drawable/ic_lock_power_off" />
+
     <View
-        android:id="@+id/colorBox"
+        android:id="@+id/powerBorderBox"
         android:layout_width="161dp"
         android:layout_height="150dp"
         android:background="@drawable/circle"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/mainColorPicker"
         app:layout_constraintTop_toTopOf="@+id/mainColorPicker" />
 
-<!--    <ToggleButton-->
+    <!--    <ToggleButton-->
 <!--        android:id="@+id/powerButton"-->
 <!--        android:layout_width="118dp"-->
 <!--        android:layout_height="79dp"-->
